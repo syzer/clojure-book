@@ -27,10 +27,6 @@
 (conj '(1 2 3) 4)
 ;(4 1 2 3)
 
-;sets
-(hash-set 7 7 2 2)
-#{7 2}
-
 (if true
   "first expression"
   "second expression")
@@ -68,5 +64,25 @@
 ;people
 ;["Larry King" "Joe Blow" "Mr. Smith"]
 
+;sets
+(hash-set 7 7 2 2)
+;#{7 2}
 
+(contains? #{:a :b} :a)
+;true
+
+(conj #{:a :b} :b)
+;#{:b :a}
+
+(set [3 3 4 5])
+;#{4 3 5}
+
+((or + -) 1 2 3)
+;6
+
+((and (= 1 1) +) 1 2 3)
+;6
+
+(map inc [0 1 2 3])
+;(1 2 3 4)
 
