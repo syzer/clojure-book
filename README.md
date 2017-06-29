@@ -1,5 +1,10 @@
 # hello-world
 
+```bash
+lein repl
+lein uberjar
+```
+
 FIXME: description
 
 ## Installation
