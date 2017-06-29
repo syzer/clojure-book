@@ -75,6 +75,8 @@
       [inc-by]
       #(+ % inc-by))
 
+(+ 1 2 3)
+
 (def inc3 (inc-maker 3))
 (inc3 0)
 ;3
